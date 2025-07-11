@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>සේවක ලියාපදිංචි / Job Seeker Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://via.placeholder.com/100x100.png?text=Logo" alt="Logo">
+    </div>
+    <h1>සේවක ලියාපදිංචි පෝරමය<br><span>Job Seeker Registration Form</span></h1>
+    <form id="regForm">
+      <label>නම / Full Name</label><input type="text" name="name" required>
+      <label>ජා.හැ.අංකය / NIC Number</label><input type="text" name="nic" required>
+      <label>ලිපිනය / Address</label><textarea name="address" rows="2" required></textarea>
+      <label>දුරකථන අංකය / Phone Number</label><input type="tel" name="phone" required>
+      <label>වට්සැප් අංකය / WhatsApp Number</label><input type="tel" name="whatsapp">
+      <label>පළපුරුදු සේවාව / Skilled Job Type</label>
+      <select name="service" required>
+        <option value="">--Select--</option>
+        <option>විදුලි කටයුතු (Electrical Work)</option>
+        <option>ගඩොල් වැඩ (Masonry)</option>
+        <option>තෙත් වැඩ (Plumbing)</option>
+        <option>තීන්ත වැඩ (Painting)</option>
+        <option>ලෝහ වැඩ (Welding)</option>
+        <option>ගෘහ සේවාවන් (Domestic Services)</option>
+        <option>මෝටර් රථ සේවා (Vehicle Services)</option>
+        <option>තාක්ෂණික සේවා (Technical Services)</option>
+        <option>ගෘහ නිවාස බිහි කිරීම (Construction)</option>
+        <option>වෙනත් (Other)</option>
+      </select>
+      <label>සේවා පළපුරුද්ද / Work Experience (Years)</label><input type="number" name="experience" min="0" max="50" required>
+      <label>සේවය කිරීමට කැමති ප්‍රදේශය / Preferred Working Area</label>
+      <select name="area" required>
+        <option value="">--Select--</option>
+        <option>Colombo</option>
+        <option>Gampaha</option>
+        <option>Kalutara</option>
+        <option>Kandy</option>
+        <option>Galle</option>
+        <option>Jaffna</option>
+        <option>Other</option>
+      </select>
+      <button type="submit">Submit</button>
+      <p id="msg"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
