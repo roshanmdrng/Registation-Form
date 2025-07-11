@@ -1,6 +1,6 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: Arial, sans-serif; background:#4209ad; }
-.container { max-width:500px; margin:30px auto; padding:20px; background:#e23bb8; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.container { max-width:500px; margin:30px auto; padding:20px; background:#cfcec7; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
 .logo { text-align:center; margin-bottom:10px; }
 .logo img { width:80px; }
 h1 { text-align:center; margin-bottom:20px; color:#003366; }
