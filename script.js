@@ -18,6 +18,6 @@ document.getElementById('regForm').addEventListener('submit', function(e) {
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Error sending message');
+                alert('Error sending 2 message');
             });
         });
