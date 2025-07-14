@@ -10,7 +10,7 @@ document.getElementById('regForm').addEventListener('submit', function(e) {
             })
             .then(response => response.json())
             .then(data => {
-                alert('Message sent successfully!');
+                alert('Message sent successfully, Thank You! ඔයාගේ තොරතුරු අපිට ලැබුනා, ස්තූතියි!');
                 this.reset();
             })
             .catch(error => {
