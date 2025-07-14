@@ -1,14 +1,23 @@
-document.getElementById('regForm').onsubmit = async e => {
-  e.preventDefault();
-  const form = e.target;
-  const data = new URLSearchParams(new FormData(form));
-  const res = await fetch('https://sheetdb.io/api/v1/YOUR_SHEETDB_ID', {
-    method: 'POST', body: data
-  });
-  if (res.ok) {
-    form.reset();
-    document.getElementById('msg').textContent = 'Registration received 🙌';
-  } else {
-    document.getElementById('msg').textContent = 'Submission failed, please try again.';
-  }
-};
+document.getElementById('regForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            fetch('YOUR_APPS_SCRIPT_URL', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Message sent successfully!');
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error sending message');
+            });
+        });
