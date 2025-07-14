@@ -4,7 +4,7 @@ document.getElementById('regForm').addEventListener('submit', function(e) {
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
-            fetch('https://script.google.com/macros/s/AKfycbx5y4D07sJiO_Uqt68SBHEsyGRsX-2UaYrUn2dZpyDn8MWEmdJZeJKhLXdr9EgvvW6u/execRL', {
+            fetch('https://script.google.com/macros/s/AKfycbzrDHWEBk1cYANo7ocZp4F5vl8VnKl5aCnn7eK6aGKMrXBf8Ksbk9V7GMGmqmj6udwB/exec', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
